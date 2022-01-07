@@ -320,9 +320,9 @@ jobs:
 
           no_output_timeout: 1m
           command: |
-            sleep 30s
+            sleep 1s
             ./e4
-    parallelism: 1
+    parallelism: 15
   Aaaa:
     docker:
 
@@ -543,7 +543,7 @@ jobs:
 
           no_output_timeout: 1m
           command: |
-            sleep 330s
+            sleep 2s
             ./e4
 
 
@@ -595,7 +595,7 @@ jobs:
 
 
 
-    parallelism: 1
+    parallelism: 15
 workflows:
     version: 2.1
     build:
